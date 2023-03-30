@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <nav>
+	  <a href="Assignment.html">Home</a> |
+	  <a href="Dog.html">Dog Picture</a> |
+	  <a href="Dog_Video.html">Dog Video</a>
+	</nav>
+    <head>
+	    <title>Dog News</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+	
+	    <header>
+		    <h1>Dog News</h1>
+			<main>
+			<p>Here is a quote from AKC website:</p>
+			<blockquote cite="https://www.akc.org/expert-advice/lifestyle/dog-quotes/">
+            “Happiness is a warm puppy.” – Charles Shultz (cartoonist, Peanuts)
+            </blockquote>
+			<img src="http://cdn.akc.org/SEO/dog-quotes/shultz.png">
+			<p>
+			<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJtDVNpZssIj08uvj2O-m37gSgmum7bHrwDQ&usqp=CAU">Another cute dog here</a>
+			</p>
+			</main>
+		</header>
+	<footer>
+	<p>To contact us please email: abc@email.com</p>
+	</footer>
+	</body>
+</html>
