@@ -1,0 +1,21 @@
+table {
+	border: 1px solid silver;
+}
+td:hover {
+	color: black;
+	background-color: yellow
+}
+td {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+}
+tr, th {
+	background-color: yellow;
+	color: black;
+}
+tr, td {
+	background-color: darkgreen;
+	color: white;
+}
