@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="eng">
 	<head>
+		<meta charset="utf-8">
 		<title>Peaky Blinders | TV Series</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="one_page_website_css.css">
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website_css.css">
 	</head>
 	<body>
 	
 		<!-- NAV -->
 		<div>
-			<div>
-				<nav>
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#trailer"><li>TRAILER</li></a>
 					<a href="#actors"><li>ACTORS</li></a>
 					<a href="#contact"><li>CONTACT US</li></a>
-				</nav>
+				</ul>
 			</div>
 		</div>
 		<!-- END NAV -->
@@ -23,9 +24,9 @@
 		<!-- HOME -->
 		<div id="home">
 			<div>
-				<div>
-					<h1>Peaky Blinders</h1>
-					<p>Peaky Blinders is a British period crime drama television series created by Steven Knight. Set in Birmingham, it follows the exploits of the Peaky Blinders crime gang in the direct aftermath of the First World War. The fictional gang is loosely based on a real urban youth gang of the same name who were active in the city from the 1880s to the 1910s.</p>
+				<div class="text-center">
+					<span class="head-main">Peaky Blinders</span>
+					<p><strong>Peaky Blinders is a British period crime drama television series created by Steven Knight. Set in Birmingham, it follows the exploits of the Peaky Blinders crime gang in the direct aftermath of the First World War. The fictional gang is loosely based on a real urban youth gang of the same name who were active in the city from the 1880s to the 1910s.</strong></p>
 				</div>
 			</div>
 		</div>
@@ -34,7 +35,7 @@
 		<!-- TRAILER -->
 		<div id="trailer">
 			<div>
-				<h1>Series launch trailer</h1>
+				<h1 class="trailer">Series launch trailer</h1>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/EM12mcTEI88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
 		</div>
@@ -177,27 +178,27 @@
 		<!-- END ACTORS -->
 		
 		<!-- CONTACT -->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Contact Us</h1>
-					<div>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Contact Us</h1>
+					<div class="talking">
 						<h2><span>We love talking to other fans.</span>
 							<br>Don't be shy to drop a message!
 						</h2>
-						<p>
+						<p class="contact-text">
 								Please provide us with your basic contact information and message.
 						</p>
-						<div>
+						<div class="form-contact">
 							<form action="" method="post">
 								<input class="contact" type="text" value="First Name">
 								<input class="contact" type="text" value="Last Name">
 								<input class="contact" type="text" value="Email Address">
 								<input class="contact" type="text" value="Message">
 								<div class="form-spacer">
-									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
+									<label class="terms">Terms and Conditions</label>
 									<input type="submit" value="Submit"> 
 								</div>
 							</form>
@@ -209,7 +210,7 @@
 		<!-- END CONTACT -->
 
 		<!-- FOOTER	-->
-		<div>
+		<div id="footer">
 			www.peakyblinderfans.com &nbsp;|&nbsp; &copy; 2023
 		</div>
 		<!-- END FOOTER -->		
