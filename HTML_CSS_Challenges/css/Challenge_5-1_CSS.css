@@ -1,0 +1,254 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    filter: drop-shadow(10px 10px 12px gray);
+    border-radius: 50px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.centered {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    text-shadow: 4px 4px black;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 3px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 17px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+}
+
+/*video*/
+
+iframe.video-center {
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/*--timetable---*/
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+tr:hover {background-color: aqua;}
+
+#toprow {
+    background-color: blue;
+    color: white;
+}
+/*---/timetable--*/
+
+/*--NAVBAR---*/
+.navbar {
+    overflow: hidden;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background: blue;
+}
+
+
+/*--/NAVBAR--*/
+
+/*--COLUMNS--*/
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    margin-top: 60px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 270px;
+    color: black;
+    margin-bottom: 60px;
+}
+
+.row::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.column2 {    /*IMAGE COLUMN*/
+    float: left;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.column3 {    /*IMAGE COLUMN*/
+    float: right;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: blue;
+}
+  
+.column2:hover .overlay {
+    opacity: 1;
+}
+
+.column3:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+p:hover {
+    font-size: 150%;
+}
+
+.column:hover {
+    height: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*video2*/
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+.videocontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.video-center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 2px 3px black;
+    font-size: 20px;
+}
+
+#prices {
+    width: 620px;
+    height: 280px;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+#toprow-prices {
+    background-color: rgba(0,0,255,0.1);
+    color: white;
+}
+
+.toprow-prices::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+#tickets {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+#opening {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        color: blue;
+    }
+}
