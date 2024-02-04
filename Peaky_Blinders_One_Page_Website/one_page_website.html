@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="eng">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>Peaky Blinders | TV Series</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website_css.css">
+		<script src="JS/one_page_website.js"></script>
 	</head>
 	<body>
 	
@@ -15,6 +16,7 @@
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#trailer"><li>TRAILER</li></a>
 					<a href="#actors"><li>ACTORS</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
 					<a href="#contact"><li>CONTACT US</li></a>
 				</ul>
 			</div>
@@ -176,6 +178,95 @@
 			</div>
 		</section>
 		<!-- END ACTORS -->
+
+		<!-- PHOTO GALLERY-->
+
+		<!-- Images used to open the lightbox -->
+		<section>
+			<div id="gallery">
+			  <h1>GALLERY</h1>
+			  <div class="row">
+				<div class="column">
+				  <img src="images/lightbox1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="images/lightbox2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="images/lightbox3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="images/lightbox4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="images/lightbox5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+				</div>
+			  </div>
+			</div>
+		</section>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 5</div>
+				<img src="images/lightbox1_wide.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 5</div>
+				<img src="images/lightbox2_wide.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 5</div>
+				<img src="images/lightbox3_wide.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 5</div>
+				<img src="images/lightbox4_wide.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">5 / 5</div>
+				<img src="images/lightbox5_wide.jpg" style="width:100%">
+			  </div>
+
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<!-- Caption text -->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+
+		<!-- Thumbnail image controls -->
+		<div class="column">
+			<img class="demo" src="images/lightbox1.jpg" onclick="currentSlide(1)" alt="">
+		</div>
+		  
+		<div class="column">
+			<img class="demo" src="images/lightbox2.jpg" onclick="currentSlide(2)" alt="">
+		</div>
+		  
+		<div class="column">
+			<img class="demo" src="images/lightbox3.jpg" onclick="currentSlide(3)" alt="">
+		</div>
+		  
+		<div class="column">
+			<img class="demo" src="images/lightbox4.jpg" onclick="currentSlide(4)" alt="">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/lightbox5.jpg" onclick="currentSlide(5)" alt="">
+		</div>
+			</div>
+		</div>
+		  
+		<!-- END PHOTO GALLERY-->
 		
 		<!-- CONTACT -->
 		<section id="contact">
